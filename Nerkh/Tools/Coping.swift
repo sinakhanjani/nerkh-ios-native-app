@@ -20,7 +20,6 @@ extension Copying {
   }
 }
 
-
 // MARK: - Prototype design pattern:
 /*
 public class Monster: Copying {
