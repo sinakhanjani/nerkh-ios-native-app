@@ -1,0 +1,6 @@
+framework module Pods_Nerkh_NerkhUITests {
+  umbrella header "Pods-Nerkh-NerkhUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
