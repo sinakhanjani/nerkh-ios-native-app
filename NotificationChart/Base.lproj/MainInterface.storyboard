@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANYekanMobileMedium.ttf">
+            <string>IRANYekanMobileFN-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="NotificationChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI9-Zo-NOd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="CHART" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwf-pY-1tX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6dT-Wl-d4d">
+                                        <rect key="frame" x="0.0" y="814" width="414" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCR-J3-eWJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="IRANYekanMobileFN-Medium" family="IRANYekanMobileFN" pointSize="17"/>
+                                                <state key="normal" title="📜 اشتراک گزاری با دوستان">
+                                                    <color key="titleColor" name="Default"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="quj-SS-ZBz"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6dT-Wl-d4d" secondAttribute="trailing" id="1tU-bW-UZR"/>
+                                    <constraint firstItem="6dT-Wl-d4d" firstAttribute="leading" secondItem="cI9-Zo-NOd" secondAttribute="leading" id="34O-8s-He6"/>
+                                    <constraint firstAttribute="bottom" secondItem="6dT-Wl-d4d" secondAttribute="bottom" id="6Ph-FA-Gdp"/>
+                                    <constraint firstItem="qwf-pY-1tX" firstAttribute="top" secondItem="cI9-Zo-NOd" secondAttribute="top" id="Jju-3B-Ufp"/>
+                                    <constraint firstItem="6dT-Wl-d4d" firstAttribute="top" secondItem="qwf-pY-1tX" secondAttribute="bottom" id="SGS-nq-ZFe"/>
+                                    <constraint firstAttribute="trailing" secondItem="qwf-pY-1tX" secondAttribute="trailing" id="oVy-qs-L4t"/>
+                                    <constraint firstItem="qwf-pY-1tX" firstAttribute="leading" secondItem="cI9-Zo-NOd" secondAttribute="leading" id="vHo-N6-zr9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cI9-Zo-NOd" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="7SJ-am-s6H"/>
+                            <constraint firstItem="cI9-Zo-NOd" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="G0Q-qo-PLK"/>
+                            <constraint firstItem="cI9-Zo-NOd" firstAttribute="bottom" secondItem="2BE-c3-nQJ" secondAttribute="bottom" id="WNv-mA-cw9"/>
+                            <constraint firstItem="cI9-Zo-NOd" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="WaG-Jf-MsH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Default">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
