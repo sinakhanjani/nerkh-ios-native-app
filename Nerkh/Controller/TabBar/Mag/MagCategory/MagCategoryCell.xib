@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANYekanMobileMedium.ttf">
+            <string>IRANYekanMobileFN-Medium</string>
+        </array>
+        <array key="IRANYekanMobileRegular.ttf">
+            <string>IRANYekanMobileFN</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="magCategory-cell-reuse-identifier" id="gTV-IL-0wX" customClass="MagCategoryCell" customModule="Nerkh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="176" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="176" height="280"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L9o-gb-JPX">
+                        <rect key="frame" x="0.0" y="0.0" width="176" height="175.5"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلا خیلی گران شد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo6-dY-wnY" customClass="MyLabel" customModule="Nerkh" customModuleProvider="target">
+                        <rect key="frame" x="8" y="186" width="160" height="16"/>
+                        <fontDescription key="fontDescription" name="IRANYekanMobileFN-Medium" family="IRANYekanMobileFN" pointSize="15"/>
+                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="enText" value="News Title Here"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="faText" value="طلا گران شد"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلا خیلی گران شد" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM1-qf-WcV" customClass="MyLabel" customModule="Nerkh" customModuleProvider="target">
+                        <rect key="frame" x="8" y="208" width="160" height="13"/>
+                        <fontDescription key="fontDescription" name="IRANYekanMobileFN" family="IRANYekanMobileFN" pointSize="12"/>
+                        <color key="textColor" systemColor="quaternaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="enText" value="Description tile here Description tile here Description tile here Description tile here"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="faText" value="در این قسمت مختصری از هر خبر از سرور به اپلیکیشن ارسال میشود در این قسمت مختصری از هر خبر از سرور به اپلیکیشن ارسال میشود"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="L9o-gb-JPX" secondAttribute="trailing" id="01l-kQ-lII"/>
+                <constraint firstItem="L9o-gb-JPX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-2.3999999999999999" id="0uj-B3-IJJ"/>
+                <constraint firstItem="Zo6-dY-wnY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="35x-6B-d98"/>
+                <constraint firstItem="L9o-gb-JPX" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.64" constant="1.3400000000000001" id="5EP-bi-8JM"/>
+                <constraint firstItem="EM1-qf-WcV" firstAttribute="top" secondItem="Zo6-dY-wnY" secondAttribute="bottom" constant="6" id="8tQ-ZH-PnU"/>
+                <constraint firstItem="Zo6-dY-wnY" firstAttribute="top" secondItem="L9o-gb-JPX" secondAttribute="bottom" constant="8" id="ICq-7H-fZn"/>
+                <constraint firstAttribute="trailing" secondItem="Zo6-dY-wnY" secondAttribute="trailing" constant="8" id="LYP-Es-2P3"/>
+                <constraint firstItem="EM1-qf-WcV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Ukg-Hk-qBo"/>
+                <constraint firstAttribute="trailing" secondItem="EM1-qf-WcV" secondAttribute="trailing" constant="8" id="V69-9H-9yc"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EM1-qf-WcV" secondAttribute="bottom" constant="8" id="g19-6U-0oC"/>
+                <constraint firstItem="Zo6-dY-wnY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="jL8-Vs-kxz"/>
+                <constraint firstItem="L9o-gb-JPX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wx7-1B-jwd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="176" height="280"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="descriptionLabel" destination="EM1-qf-WcV" id="rOn-cY-AHa"/>
+                <outlet property="imageView" destination="L9o-gb-JPX" id="QQa-pF-acY"/>
+                <outlet property="titleLabel" destination="Zo6-dY-wnY" id="iA7-ZF-9Wy"/>
+            </connections>
+            <point key="canvasLocation" x="52.173913043478265" y="187.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cloud" catalog="system" width="64" height="42"/>
+    </resources>
+</document>

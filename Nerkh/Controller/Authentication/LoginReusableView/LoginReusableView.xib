@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANYekanMobileBold.ttf">
+            <string>IRANYekanMobileFN-Bold</string>
+        </array>
+        <array key="IRANYekanMobileRegular.ttf">
+            <string>IRANYekanMobileFN</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginReusableView" customModule="Nerkh" customModuleProvider="target">
+            <connections>
+                <outlet property="loginView" destination="1cW-Fm-yuJ" id="16H-vF-JMw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="771" height="1073"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cW-Fm-yuJ" customClass="LoginView" customModule="Nerkh" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="771" height="1029"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rry-xE-hSp">
+                            <rect key="frame" x="0.0" y="8" width="771" height="200"/>
+                            <subviews>
+                                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Cl-ZW-cKA">
+                                    <rect key="frame" x="0.0" y="0.0" width="771" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ورود" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP4-eU-0Mq" customClass="MyLabel" customModule="Nerkh" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="5.5" width="739" height="33"/>
+                                            <fontDescription key="fontDescription" name="IRANYekanMobileFN-Bold" family="IRANYekanMobileFN" pointSize="28"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="faText" value="ورود"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="enText" value="Authentication"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="NP4-eU-0Mq" firstAttribute="centerX" secondItem="3Cl-ZW-cKA" secondAttribute="centerX" id="09e-Jr-eh0"/>
+                                        <constraint firstItem="NP4-eU-0Mq" firstAttribute="centerY" secondItem="3Cl-ZW-cKA" secondAttribute="centerY" id="831-hZ-jEf"/>
+                                        <constraint firstAttribute="trailing" secondItem="NP4-eU-0Mq" secondAttribute="trailing" constant="16" id="O7U-T8-sYQ"/>
+                                        <constraint firstAttribute="height" constant="44" id="On5-do-Oac"/>
+                                    </constraints>
+                                </view>
+                                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fta-2z-YVA">
+                                    <rect key="frame" x="0.0" y="52" width="771" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="برای استفاده از اپلیکیشن نرخ میتوانید با اکانت جیمیل گوگل یا شماره موبایل وارد شوید." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u28-pm-yMS" customClass="MyLabel" customModule="Nerkh" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="13.5" width="739" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="IRANYekanMobileFN" family="IRANYekanMobileFN" pointSize="15"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="faText" value="برای استفاده از اپلیکیشن نرخ میتوانید با اکانت جیمیل گوگل یا شماره موبایل وارد شوید."/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="enText" value="You can login with gmail account or mobile verification"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="u28-pm-yMS" secondAttribute="trailing" constant="16" id="5hq-Sf-Ywc"/>
+                                        <constraint firstItem="u28-pm-yMS" firstAttribute="centerY" secondItem="fta-2z-YVA" secondAttribute="centerY" id="Gyj-jr-uJS"/>
+                                        <constraint firstAttribute="height" constant="44" id="ZB3-sy-fu5"/>
+                                        <constraint firstItem="u28-pm-yMS" firstAttribute="centerX" secondItem="fta-2z-YVA" secondAttribute="centerX" id="wJE-zL-0a9"/>
+                                    </constraints>
+                                </view>
+                                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-PG-Cgf">
+                                    <rect key="frame" x="0.0" y="104" width="771" height="44"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uGa-Ab-lGB">
+                                            <rect key="frame" x="297" y="13" width="177" height="18"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FvB-Bx-web">
+                                                    <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="Ojv-PZ-ZxM"/>
+                                                        <constraint firstAttribute="width" constant="18" id="ukG-mY-7pt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuA-sJ-uO4" customClass="MyButton" customModule="Nerkh" customModuleProvider="target">
+                                                    <rect key="frame" x="26" y="0.0" width="151" height="18"/>
+                                                    <fontDescription key="fontDescription" name="IRANYekanMobileFN" family="IRANYekanMobileFN" pointSize="17"/>
+                                                    <state key="normal" title="ورود از طریق اکانت گوگل">
+                                                        <color key="titleColor" name="Application"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="faText" value="ورود از طریق اکانت گوگل"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="enText" value="Authenticate With Google"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="gAuthButtonTapped:" destination="-1" eventType="touchUpInside" id="eoU-ul-ant"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="Default"/>
+                                    <constraints>
+                                        <constraint firstItem="uGa-Ab-lGB" firstAttribute="centerY" secondItem="YLe-PG-Cgf" secondAttribute="centerY" id="3HD-a1-Eaa"/>
+                                        <constraint firstItem="uGa-Ab-lGB" firstAttribute="centerX" secondItem="YLe-PG-Cgf" secondAttribute="centerX" id="i3O-tm-bwx"/>
+                                        <constraint firstAttribute="height" constant="44" id="qJg-Cc-cE5"/>
+                                    </constraints>
+                                </view>
+                                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9G-lb-lRP">
+                                    <rect key="frame" x="0.0" y="156" width="771" height="44"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZF3-DV-9Ie">
+                                            <rect key="frame" x="290.5" y="10" width="190" height="24"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="09L-Pj-fP4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="21" height="24"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" name="Default"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="aSl-Hn-cMJ"/>
+                                                        <constraint firstAttribute="width" constant="21" id="ibr-Y1-bvb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G3-Af-w1Q" customClass="MyButton" customModule="Nerkh" customModuleProvider="target">
+                                                    <rect key="frame" x="29" y="0.0" width="161" height="24"/>
+                                                    <fontDescription key="fontDescription" name="IRANYekanMobileFN" family="IRANYekanMobileFN" pointSize="17"/>
+                                                    <state key="normal" title="ورود از طریق شماره موبایل">
+                                                        <color key="titleColor" name="Default"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="faText" value="ورود از طریق شماره موبایل"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="enText" value="Authenticate With Mobile"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="phoneAuthButtonTapped:" destination="-1" eventType="touchUpInside" id="xy7-5Q-emN"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="ZF3-DV-9Ie" firstAttribute="centerX" secondItem="j9G-lb-lRP" secondAttribute="centerX" id="2ou-vf-pVT"/>
+                                        <constraint firstAttribute="height" constant="44" id="YAZ-2w-RgE"/>
+                                        <constraint firstItem="ZF3-DV-9Ie" firstAttribute="centerY" secondItem="j9G-lb-lRP" secondAttribute="centerY" id="oXJ-5B-qtr"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="توسعه دهنده سینا خانجانی ۱۳۹۸" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSW-V8-4Qf" customClass="MyLabel" customModule="Nerkh" customModuleProvider="target">
+                            <rect key="frame" x="16" y="991" width="739" height="14"/>
+                            <fontDescription key="fontDescription" name="IRANYekanMobileFN" family="IRANYekanMobileFN" pointSize="12"/>
+                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="enText" value="Development by Sinakhanjani"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="faText" value="توسعه دهنده سینا خانجانی"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="KSW-V8-4Qf" firstAttribute="leading" secondItem="1cW-Fm-yuJ" secondAttribute="leading" constant="16" id="1vH-vB-mjW"/>
+                        <constraint firstItem="rry-xE-hSp" firstAttribute="top" secondItem="1cW-Fm-yuJ" secondAttribute="top" constant="8" id="4vq-O7-Tjv"/>
+                        <constraint firstAttribute="trailing" secondItem="rry-xE-hSp" secondAttribute="trailing" id="Mfs-Qk-c5B"/>
+                        <constraint firstAttribute="bottom" secondItem="KSW-V8-4Qf" secondAttribute="bottom" constant="24" id="Rlr-3p-tXs"/>
+                        <constraint firstAttribute="trailing" secondItem="KSW-V8-4Qf" secondAttribute="trailing" constant="16" id="oxu-wh-RGu"/>
+                        <constraint firstItem="rry-xE-hSp" firstAttribute="leading" secondItem="1cW-Fm-yuJ" secondAttribute="leading" id="zl8-Dd-cXo"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="loginStackView" destination="rry-xE-hSp" id="Qxv-8S-8Pk"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1cW-Fm-yuJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="31g-3v-sLv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1cW-Fm-yuJ" secondAttribute="trailing" id="GtX-Bo-auR"/>
+                <constraint firstItem="1cW-Fm-yuJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oVa-fU-9zJ"/>
+                <constraint firstAttribute="bottom" secondItem="1cW-Fm-yuJ" secondAttribute="bottom" id="qdM-hJ-s92"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-121.0144927536232" y="207.92410714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="googleIcon" width="21" height="21"/>
+        <image name="phone_icon" width="24" height="24"/>
+        <namedColor name="Application">
+            <color red="0.94900000095367432" green="0.95999997854232788" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Default">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
